@@ -20,6 +20,12 @@ jobs:
       #     MONGODB_DB: ${{ secrets.MONGODB_DB }}
       #     TARGET_MONGODB_DB: preview,development,production
       #     TYPE_MONGODB_DB: encrypted
+
+      # codecov stats
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
           
       # deploy app to vercel
       - name: deploy site to vercel      
@@ -31,8 +37,4 @@ jobs:
           vercel-org-id: ${{ secrets.ORGID}}  #Required
           vercel-project-id: ${{ secrets.PROJECTID}} #Required 
     
-      # codecov stats
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      
