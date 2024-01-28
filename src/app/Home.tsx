@@ -5,6 +5,7 @@ import { Euler, Vector3 } from 'three';
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useState } from 'react';
 
+import HomeInfo from '@/components/HomeInfo';
 import Loader from '@/components/Loader';
 import Bird from '@/models/Bird';
 import Island from '@/models/Islands';
@@ -70,7 +71,7 @@ const Home: React.FC = () => {
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        POPS
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
       <Canvas
