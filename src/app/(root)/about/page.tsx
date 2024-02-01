@@ -1,5 +1,7 @@
+import About from './About';
+
 const page = () => {
-  return <div>page</div>;
+  return <About />;
 };
 
 export default page;
