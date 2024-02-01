@@ -5,21 +5,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # #add env file to .env.local
-      # - name: Set Env Vars on Vercel Project
-      #   uses: dkershner6/vercel-set-env-action@v1
-      #   with:
-      #     token: ${{ secrets.VERCEL_TOKEN }}
-      #     teamId: ${{ secrets.VERCEL_TEAM_ID }} # optional, without will use personal
-      #     projectName: nexturl # project name in Vercel
-      #     envVariableKeys: MONGODB_URL,MONGODB_DB
-      #   env:
-      #     MONGODB_URL: ${{ secrets.MONGODB_URL }}
-      #     TARGET_MONGODB_URL: preview,development,production # comma delimited, one of [production, preview, development]
-      #     TYPE_MONGODB_URL: encrypted # one of [plain, encrypted]
-      #     MONGODB_DB: ${{ secrets.MONGODB_DB }}
-      #     TARGET_MONGODB_DB: preview,development,production
-      #     TYPE_MONGODB_DB: encrypted
+      #add env file to .env.local
+      - name: Set Env Vars on Vercel Project
+        uses: dkershner6/vercel-set-env-action@v1
+        with:
+          token: ${{ secrets.VERCEL_TOKEN }}
+          # teamId: ${{ secrets.VERCEL_TEAM_ID }} # optional, without will use personal
+          projectName: 3d-portfolio # project name in Vercel
+          envVariableKeys: NEXT_PUBLIC_APP_EMAILJS_SERVICE_ID,NEXT_PUBLIC_APP_EMAILJS_TEMPLATE_ID,NEXT_PUBLIC_APP_EMAILJS_PUBLICKEY
+        env:
+          NEXT_PUBLIC_APP_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_APP_EMAILJS_SERVICE_ID }}
+          TARGET_NEXT_PUBLIC_APP_EMAILJS_SERVICE_ID: preview,development,production # comma delimited, one of [production, preview, development]
+          TYPE_NEXT_PUBLIC_APP_EMAILJS_SERVICE_ID: encrypted # one of [plain, encrypted]
+          NEXT_PUBLIC_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_APP_EMAILJS_TEMPLATE_ID }}
+          TARGET_NEXT_PUBLIC_APP_EMAILJS_TEMPLATE_ID: preview,development,production # comma delimited, one of [production, preview, development]
+          TYPE_NEXT_PUBLIC_APP_EMAILJS_TEMPLATE_ID: encrypted # one of [plain, encrypted]
+          NEXT_PUBLIC_APP_EMAILJS_PUBLICKEY: ${{ secrets.NEXT_PUBLIC_APP_EMAILJS_PUBLICKEY }}
+          TARGET_NEXT_PUBLIC_APP_EMAILJS_PUBLICKEY: preview,development,production # comma delimited, one of [production, preview, development]
+          TYPE_NEXT_PUBLIC_APP_EMAILJS_PUBLICKEY: encrypted # one of [plain, encrypted]
+          
 
       # codecov stats
       - name: Upload coverage reports to Codecov
