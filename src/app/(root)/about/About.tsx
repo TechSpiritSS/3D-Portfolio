@@ -1,3 +1,5 @@
+import CallToAction from '@/components/CallToAction';
+import WorkExperience from '@/components/WorkExperience';
 import { skills } from '@/constants';
 import Image from 'next/image';
 
@@ -36,6 +38,23 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <div className="py-16">
+        <h3 className="subhead-text">Work Experience</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <p>
+            I&apos;ve worked with all sorts of companies, leveling up my skills
+            and teaming up with smart people. Here&apos;s the rundown:
+          </p>
+        </div>
+
+        <div className="mt-12 flex">
+          <WorkExperience />
+        </div>
+      </div>
+
+      <hr className="border-slate-200" />
+      <CallToAction />
     </section>
   );
 };
