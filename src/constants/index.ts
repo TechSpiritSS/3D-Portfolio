@@ -177,49 +177,49 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    name: 'Mood-Messenger',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      'Embark on a seamless communication experience with Mood Messenger, a real-time chat application meticulously crafted using cutting-edge technologies. This application, powered by Node.js and React.js, boasts integration with Google Cloud SQL for robust data storage. Users can effortlessly sign in with their Google accounts, initiate chats with fellow users via email, send messages, and seamlessly revisit previous conversations. Elevate your messaging experience with Mood Messenger, hosted on the reliable Google Cloud Platform.',
+    link: 'https://github.com/TechSpiritSS/Mood-Messenger',
   },
   {
     iconUrl: threads,
     theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    name: 'PregChat',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
+      'PregChat is a chatbot designed to help expecting mothers access important information about their pregnancy in a simple, accessible and interactive way. Our chatbot is powered by Dialogflow, a Google Cloud-based natural language processing platform. With PregChat, mothers can easily ask about their symptoms and receive information regarding medical emergencies, first aid, medications, and exercises. PregChat aims to provide support and education to mothers in need, ultimately improving the health outcomes for both mother and child.',
+    link: 'https://github.com/TechSpiritSS/PregChat_Dialogflow',
   },
   {
     iconUrl: car,
     theme: 'btn-back-blue',
-    name: 'Car Finding App',
+    name: 'S Movies',
     description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+      'Developed a comprehensive movie web application featuring an advanced profile system and personalized recommendations. The application includes voice integration for an enhanced user experience and supports both Dark and Light modes. Implemented ESLint configurations to maintain clean and organized code. Successfully deployed on Netlify, ensuring seamless accessibility.',
+    link: 'https://github.com/TechSpiritSS/S-Movies',
   },
   {
     iconUrl: snapgram,
     theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
+    name: 'BigINT Library',
     description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
+      'Presenting my custom C Library for handling BigINT (Big Integer) operations, meticulously crafted from the ground up. Boasting support for handling massive numbers, with the capacity to manage up to 2700 digits (modifiable in the bigint.c file). This project serves as a personal exploration, a journey in reinventing the wheel solely for the purpose of deepening my understanding of intricate concepts in programming.',
+    link: 'https://github.com/TechSpiritSS/bigInt.git',
   },
   {
     iconUrl: estate,
     theme: 'btn-back-black',
-    name: 'Real-Estate Application',
+    name: 'Task C++',
     description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
+      'Introducing Task C++, a command line-powered task management application designed exclusively in C++. This efficient tool utilizes a text file as a storage medium for seamless task organization. Notably, it stands out for its commitment to pure C++ implementation, without relying on any external libraries. Simplify your task management experience with this lightweight, console-based solution.',
+    link: 'https://github.com/TechSpiritSS/Task-C-',
   },
   {
     iconUrl: summiz,
     theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
+    name: '50 Days of Web',
     description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+      'Embark on a transformative journey through the realms of web development with the "50 Days of Web" challenge. This ambitious venture involves creating 50 unique projects over the course of 50 days, employing a skillful blend of HTML, CSS, and JavaScript. Join me on this immersive experience as we explore the dynamic landscape of web development, one project at a time.',
+    link: 'https://techspiritss.github.io/50-Days-50-Projects-Web-Dev/',
   },
 ];
