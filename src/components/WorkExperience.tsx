@@ -26,7 +26,7 @@ const WorkExperience = () => {
             </div>
           }
           iconStyle={{
-            background: experience.iconBg,
+            background: 'white',
             boxShadow: 'none',
             border: 'none',
           }}
@@ -50,6 +50,15 @@ const WorkExperience = () => {
             >
               {experience.company_name}
             </p>
+
+            <h4
+              className="text-black-500/50 font-medium font-base"
+              style={{
+                margin: 0,
+              }}
+            >
+              {experience.date}
+            </h4>
           </div>
 
           <ul className="my-5 list-disc ml-5 space-y-2">
