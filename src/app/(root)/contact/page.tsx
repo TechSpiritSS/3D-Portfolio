@@ -1,5 +1,7 @@
+import Contact from './Contact';
+
 const page = () => {
-  return <div>page</div>;
+  return <Contact />;
 };
 
 export default page;
