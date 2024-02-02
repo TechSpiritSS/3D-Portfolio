@@ -65,7 +65,7 @@ const Pikachu: React.FC<PikachuProps> = ({ currentAnimation, ...props }) => {
               <group
                 name="Pikachu_49"
                 rotation={[Math.PI / 2, 0, 0]}
-                scale={0.025}
+                scale={0.05}
               >
                 <group name="GLTF_created_0">
                   <primitive object={nodes.GLTF_created_0_rootJoint} />
