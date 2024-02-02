@@ -430,7 +430,6 @@ export const volunteerings = [
     date: 'January 2023 - February 2023',
     points: [
       'Terminal-Portfolio invites talented developers to create stunning, command-line themed portfolios to showcase their skills and work. Command-line interface is a powerful and efficient tool for developers, and this project aims to celebrate this through the creation of visually striking and intuitively designed web terminals Project.',
-      'https://github.com/TechSpiritSS/Terminal-Portfolio',
     ],
   },
   {
@@ -441,7 +440,6 @@ export const volunteerings = [
     date: 'October 2022 - October 2022',
     points: [
       'Maintained Terminal Portfolio, a developer portfolio made with CLI style in mind instead of fancy GUI elements. This project is beginner-friendly and useful for many developers.',
-      'https://github.com/TechSpiritSS/Terminal-Portfolio',
     ],
   },
   {
