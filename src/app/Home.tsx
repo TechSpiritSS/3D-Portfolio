@@ -3,7 +3,7 @@
 import { Euler, Vector3 } from 'three';
 
 import { Canvas } from '@react-three/fiber';
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useState } from 'react';
 
 import HomeInfo from '@/components/HomeInfo';
 import Loader from '@/components/Loader';
@@ -11,7 +11,6 @@ import Bird from '@/models/Bird';
 import Island from '@/models/Islands';
 import Plane from '@/models/Plane';
 import Sky from '@/models/Sky';
-import Image from 'next/image';
 
 const MOBILE_SCREEN_WIDTH = 768;
 const INITIAL_SCREEN_POSITION = new Vector3(0, -6.5, -43);
@@ -20,22 +19,22 @@ const MOBILE_SCREEN_SCALE = new Vector3(0.9, 0.9, 0.9);
 const DESKTOP_SCREEN_SCALE = new Vector3(1, 1, 1);
 
 const Home: React.FC = () => {
-  const audioRef = useRef(new Audio('/music.mp3'));
-  audioRef.current.volume = 0.1;
-  audioRef.current.loop = true;
+  // const audioRef = useRef(new Audio('/music.mp3'));
+  // audioRef.current.volume = 0.1;
+  // audioRef.current.loop = true;
 
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState<number | null>(1);
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  // const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
-  useEffect(() => {
-    if (isAudioPlaying) audioRef.current.play();
+  // useEffect(() => {
+  //   if (isAudioPlaying) audioRef.current.play();
 
-    return () => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      audioRef.current.pause();
-    };
-  }, [isAudioPlaying]);
+  //   return () => {
+  //     // eslint-disable-next-line react-hooks/exhaustive-deps
+  //     audioRef.current.pause();
+  //   };
+  // }, [isAudioPlaying]);
 
   const adjustIsland = () => {
     if (typeof window === 'undefined') {
@@ -121,7 +120,7 @@ const Home: React.FC = () => {
         </Suspense>
       </Canvas>
 
-      <div className="absolute bottom-2 left-2">
+      {/* <div className="absolute bottom-2 left-2">
         <Image
           src={isAudioPlaying ? '/icons/soundon.png' : '/icons/soundoff.png'}
           alt="soundon"
@@ -133,7 +132,7 @@ const Home: React.FC = () => {
             setIsAudioPlaying(!isAudioPlaying);
           }}
         />
-      </div>
+      </div> */}
     </section>
   );
 };
