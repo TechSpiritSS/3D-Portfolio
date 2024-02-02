@@ -6,7 +6,7 @@ import Alert from '@/components/Alert';
 import Loader from '@/components/Loader';
 import { socialLinks } from '@/constants';
 import useAlert from '@/hooks/useAlert';
-import Fox from '@/models/Fox';
+import Pikachu from '@/models/Pikachu';
 import emailjs from '@emailjs/browser';
 import { Canvas } from '@react-three/fiber';
 import Image from 'next/image';
@@ -19,7 +19,7 @@ const Contact = () => {
     email: '',
     message: '',
   });
-  const [currentAnimation, setCurrentAnimation] = useState('idle');
+  const [currentAnimation, setCurrentAnimation] = useState('Idle');
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef(null);
   const { alert, showAlert, hideAlert } = useAlert();
@@ -33,7 +33,7 @@ const Contact = () => {
   const handleSubmit = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     setIsLoading(true);
-    setCurrentAnimation('hit');
+    setCurrentAnimation('Dance');
 
     emailjs
       .send(
@@ -64,7 +64,7 @@ const Contact = () => {
       })
       .finally(() => {
         setIsLoading(false);
-        setCurrentAnimation('idle');
+        setCurrentAnimation('Idle');
         setForm({
           name: '',
           email: '',
@@ -79,10 +79,10 @@ const Contact = () => {
       });
   };
   const handleFocus = () => {
-    setCurrentAnimation('walk');
+    setCurrentAnimation('Walking');
   };
   const handleBlur = () => {
-    setCurrentAnimation('idle');
+    setCurrentAnimation('Idle');
   };
 
   return (
@@ -130,7 +130,7 @@ const Contact = () => {
               type="text"
               name="name"
               className="input"
-              placeholder="Sidharth"
+              placeholder="Sidharth Sethi"
               required
               value={form.name}
               onChange={handleChange}
@@ -189,11 +189,11 @@ const Contact = () => {
           <directionalLight intensity={2.5} position={[0, 0, 1]} />
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
-            <Fox
+            <Pikachu
               currentAnimation={currentAnimation}
-              position={[0.5, 0.35, 0]}
-              rotation={[12.625, -0.6, 0]}
-              scale={[0.5, 0.5, 0.5]}
+              position={[0, 0, 0]}
+              rotation={[13.1, -0.5, 0]}
+              scale={[1, 1, 1]}
             />
           </Suspense>
         </Canvas>
