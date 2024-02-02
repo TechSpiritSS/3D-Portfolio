@@ -1,6 +1,6 @@
 import CallToAction from '@/components/CallToAction';
-import WorkExperience from '@/components/WorkExperience';
-import { skills } from '@/constants';
+import Timeline from '@/components/Timeline';
+import { awards, experiences, skills, volunteerings } from '@/constants';
 import Image from 'next/image';
 
 const About = () => {
@@ -50,7 +50,36 @@ const About = () => {
         </div>
 
         <div className="mt-12 flex">
-          <WorkExperience />
+          <Timeline experiences={experiences} />
+        </div>
+      </div>
+
+      <div className="py-16">
+        <h3 className="subhead-text">Volunteering</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <p>
+            Apart from my professional work, I also volunteer for various
+            communities and organizations. Here&apos;s a list of my volunteer
+            work:
+          </p>
+        </div>
+
+        <div className="mt-12 flex">
+          <Timeline experiences={volunteerings} />
+        </div>
+      </div>
+
+      <div className="py-16">
+        <h3 className="subhead-text">Awards</h3>
+        <div className="mt-5 flex flex-col gap-3 text-slate-500">
+          <p>
+            I&apos;ve been lucky enough to receive a few awards and
+            recognitions. Here&apos;s a list of them:
+          </p>
+        </div>
+
+        <div className="mt-12 flex">
+          <Timeline experiences={awards} />
         </div>
       </div>
 

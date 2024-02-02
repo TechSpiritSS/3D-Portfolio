@@ -1,14 +1,25 @@
 'use client';
 
-import { experiences } from '@/constants';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-const WorkExperience = () => {
+interface TimelinProps {
+  experiences: {
+    title: string;
+    company_name: string;
+    icon: StaticImageData;
+    iconBg: string;
+    date: string;
+    points: string[];
+  }[];
+}
+
+const Timeline: React.FC<TimelinProps> = (props) => {
+  const { experiences } = props;
   return (
     <VerticalTimeline>
       {experiences.map((experience) => (
@@ -77,4 +88,4 @@ const WorkExperience = () => {
   );
 };
 
-export default WorkExperience;
+export default Timeline;

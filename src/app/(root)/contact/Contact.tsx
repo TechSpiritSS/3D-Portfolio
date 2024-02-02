@@ -4,10 +4,13 @@
 
 import Alert from '@/components/Alert';
 import Loader from '@/components/Loader';
+import { socialLinks } from '@/constants';
 import useAlert from '@/hooks/useAlert';
 import Fox from '@/models/Fox';
 import emailjs from '@emailjs/browser';
 import { Canvas } from '@react-three/fiber';
+import Image from 'next/image';
+import Link from 'next/link';
 import { ChangeEvent, Suspense, useRef, useState } from 'react';
 
 const Contact = () => {
@@ -87,9 +90,37 @@ const Contact = () => {
       {alert.show && <Alert {...alert} />}
 
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text">Get in Touch</h1>
+        <h1 className="head-text flex justify-center">Get in Touch</h1>
+
+        <div
+          className="flex items-center gap-4 mt-10
+       justify-center text-black-500 font-semibold
+        "
+        >
+          {socialLinks.map((link) => (
+            <Link
+              href={link.link}
+              key={link.name}
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              <Image
+                src={link.iconUrl}
+                alt={link.name}
+                width={48}
+                height={48}
+              />
+            </Link>
+          ))}
+        </div>
+
+        <p className="text-black-500 font-semibold mt-7 flex justify-center">
+          Or drop me a message here
+        </p>
+
         <form
-          className="w-full flex flex-col gap-7 mt-14"
+          className="w-full flex flex-col gap-7 mt-7"
           onSubmit={handleSubmit}
           ref={formRef}
         >
