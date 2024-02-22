@@ -4,6 +4,8 @@ Welcome to my 3D Personal Portfolio website, powered by Next.js!
 
 [![Build Status](https://github.com/TechSpiritSS/3D-Portfolio/actions/workflows/main.yml/badge.svg)](https://github.com/TechSpiritSS/3D-Portfolio/actions/workflows/main.yml)
 
+[![wakatime](https://wakatime.com/badge/github/TechSpiritSS/3D-Portfolio.svg)](https://wakatime.com/badge/github/TechSpiritSS/3D-Portfolio)
+
 ![Portfolio Preview](https://github.com/TechSpiritSS/3D-Portfolio/assets/76687985/ff194a4a-94ac-4bac-95e1-09dca51bba09)
 
 ## Overview
