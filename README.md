@@ -6,6 +6,8 @@ Welcome to my 3D Personal Portfolio website, powered by Next.js!
 
 [![wakatime](https://wakatime.com/badge/github/TechSpiritSS/3D-Portfolio.svg)](https://wakatime.com/badge/github/TechSpiritSS/3D-Portfolio)
 
+[![wakatime](https://wakatime.com/badge/user/4903cf20-87e2-4ede-acfc-65a07506edde/project/018d3bf3-119c-4522-afd1-7613b8475a3a.svg)](https://wakatime.com/badge/user/4903cf20-87e2-4ede-acfc-65a07506edde/project/018d3bf3-119c-4522-afd1-7613b8475a3a)
+
 ![Portfolio Preview](https://github.com/TechSpiritSS/3D-Portfolio/assets/76687985/ff194a4a-94ac-4bac-95e1-09dca51bba09)
 
 ## Overview
